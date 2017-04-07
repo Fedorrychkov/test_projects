@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'ProximaNova-Bold';
+  src: url('ProximaNova-Bold.eot');
+  src: url('ProximaNova-Bold.woff2') format('woff2'),
+       url('ProximaNova-Bold.woff') format('woff'),
+       url('ProximaNova-Bold.ttf') format('truetype'),
+       url('ProximaNova-Bold.svg#ProximaNova-Bold') format('svg'),
+       url('ProximaNova-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PFRegalDisplayPro-BlackItalic';
+  src: url('PFRegalDisplayPro-BlackItalic.eot');
+  src: url('PFRegalDisplayPro-BlackItalic.woff2') format('woff2'),
+       url('PFRegalDisplayPro-BlackItalic.woff') format('woff'),
+       url('PFRegalDisplayPro-BlackItalic.ttf') format('truetype'),
+       url('PFRegalDisplayPro-BlackItalic.svg#PFRegalDisplayPro-BlackItalic') format('svg'),
+       url('PFRegalDisplayPro-BlackItalic.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNova-Regular';
+  src: url('ProximaNova-Regular.eot');
+  src: url('ProximaNova-Regular.woff2') format('woff2'),
+       url('ProximaNova-Regular.woff') format('woff'),
+       url('ProximaNova-Regular.ttf') format('truetype'),
+       url('ProximaNova-Regular.svg#ProximaNova-Regular') format('svg'),
+       url('ProximaNova-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Queen of Heaven';
+  src: url('Queen of Heaven.eot');
+  src: url('Queen of Heaven.woff2') format('woff2'),
+       url('Queen of Heaven.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'QueenofHeaven';
+  src: url('QueenofHeaven.woff') format('woff'),
+       url('QueenofHeaven.ttf') format('truetype'),
+       url('QueenofHeaven.svg#QueenofHeaven') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+

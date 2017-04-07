@@ -1,0 +1,44 @@
+@import url(../fonts/font.css);
+body {
+  background-color: #fff;
+  font-size: 17px;
+  background-image: url(../img/background.png); }
+
+/*** standart styles ** */
+a {
+  color: #333;
+  text-decoration: none; }
+
+.page-wrapper {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto; }
+
+.inner {
+  padding: 0 50px; }
+
+/**** index *** */
+#header {
+  display: block; }
+  #header .header_top {
+    position: relative;
+    text-align: center; }
+    #header .header_top .leftSide, #header .header_top .rightSide {
+      position: absolute;
+      width: 300px; }
+    #header .header_top .leftSide {
+      left: 0;
+      top: 0; }
+    #header .header_top .rightSide {
+      right: 0;
+      top: 0; }
+  #header .menu ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    #header .menu ul li {
+      list-style: none; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,590 @@
+@import "../fonts/font.css"
+body
+	background-color: #fff
+	font-size: 18px
+	background-image: url(../img/background.png)
+	font-family: 'ProximaNova-Regular'
+	color: #222
+
+/** some medias ***/
+@media (max-width: 1200px)
+	.content .shop
+		justify-content: space-around !important
+
+/*** standart styles ***/
+a
+	color: #333
+	text-decoration: none
+.page-wrapper
+	max-width: 1250px
+	width: 100%
+	margin: 0 auto
+.inner
+	padding: 0 25px
+.inner-dop
+	padding: 0 5px
+
+/**** index ****/
+// Header
+#header
+	border-bottom: 1px solid #ececec
+	padding-bottom: 16px
+	display: block
+	.header_top
+		position: relative
+		text-align: center
+		.item
+			align-items: center
+		.leftSide, .rightSide
+			position: absolute
+			display: flex
+			justify-content: space-between
+			align-items: center
+			height: 36px
+		.leftSide
+			left: 0
+			top: 0
+			width: 32.56%
+		.rightSide
+			right: 10px
+			top: 0
+			width: 28%
+		.logo
+			 font-family: 'QueenofHeaven'
+			 margin: 17px 0
+			 p
+			 	font-size: 32px
+			 	margin: 0
+		.create_shop
+			font-size: 13px
+			a
+				padding: 10px 15px
+				width: 103px
+				display: block
+				background-color: #fff
+				border-radius: 50px
+				color: #222222
+				transition: 0.3s
+				&:hover
+					color: #fff
+					background-color: #222222
+					transition: 0.3s
+		.searchbar
+
+			form
+				position: relative
+					
+				&::before
+					content: ""
+					position: absolute
+					width: 18px
+					height:  18px
+					top: 3px
+					left: 5px
+					background-image: url(../img/svg/search.svg)
+					background-repeat: no-repeat
+					background-position: left
+					background-size: cover
+					z-index: -1
+				input
+					width: 115px
+					outline: none
+					border: none
+					background: none
+					padding: 0 0 5px 40px
+					font-size: 13px
+					border-bottom: 1px solid rgba(0,0,0,0)
+					transition: 0.3s
+					z-index: 1
+					
+					&:focus
+						border-bottom: 1px solid #3e3e3e
+						transition: 0.3s
+		.rightSide
+			height: 36px
+			.item div
+				position: relative
+				align-items: center
+				margin-top: 8px
+				color: #222222
+				p
+					margin: 0
+					font-size: 15px
+			.item
+				.prof::before
+					content: ""
+					position: absolute
+					width: 19px
+					height:  19px
+					top: 0
+					left: 0
+					background-image: url(../img/svg/male-circle.svg)
+					background-repeat: no-repeat
+					background-position: left
+					background-size: cover
+				.prof p
+					padding-left: 28px
+					padding-top: 2px
+				.mess::before
+					content: ""
+					position: absolute
+					width: 15px
+					height:  15px
+					top: 0
+					left: 0
+					background-image: url(../img/svg/open-mail.svg)
+					background-repeat: no-repeat
+					background-position: left
+					background-size: cover
+				.mess p
+					padding-left: 20px
+				.mess 
+					margin-top: 10px
+					margin-right: 29px
+					flex-grow: 1
+				.cartt::before
+					content: ""
+					position: absolute
+					width: 22px
+					height:  22px
+					top: 0
+					left: 0
+					background-image: url(../img/svg/cart.svg)
+					background-repeat: no-repeat
+					background-position: left
+					background-size: cover
+				.cartt
+					margin-top: 13px
+				.cartt p
+					margin-left: 28px
+					background-color: #fff
+					padding: 5px 20px
+					border-radius: 50px
+	.menu ul
+		margin: 0
+		padding: 0
+		display: flex
+		justify-content: space-around
+		align-items: center
+		li
+			list-style: none
+			a
+				margin-left: 0
+				font-size: 14px
+				color: #222222
+				font-family: 'ProximaNova-Bold'
+				text-transform: uppercase
+				transition: 0.3s
+				&:hover
+					color: #ef9085
+					transition: 0.3s
+			//a.active
+			//	color: #ef9085
+
+
+.content
+	.inner
+		margin-top: 36px
+		position: relative
+	.bg
+		position: relative
+		background-image: url(../img/bg.png)
+		height: 400px
+		display: block
+		background-size: cover
+		background-position: center
+		background-repeat: no-repeat
+		text-align: center
+		margin-bottom: 26px
+		color: #fff
+		h1
+			color: #fff
+			font-family: 'PFRegalDisplayPro-BlackItalic'
+			font-size: 60px
+		h1, p
+			max-width: 780px
+		h1, p, div.kukla
+			margin: 0 auto
+			display: block
+			padding-top: 22px
+		div.kukla
+			width: 80px
+			height: 80px
+			display: block
+			background-image: url(../img/logo.png)
+			background-size: cover
+			background-repeat: no-repeat
+			background-position: center
+			padding: 0
+		.inner-pic
+			padding-top: 50px
+
+	.shop
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+		flex-wrap: wrap
+		article.item
+			max-width: 360px
+			width: 100%
+			margin-top: 36px
+			margin-bottom: 10px
+			&:hover
+				cursor: pointer
+			div.image
+				width: 100%
+				height: 240px
+				background-position: center
+				background-size: cover
+				background-repeat: no-repeat
+				background-color: #d7d7d7
+			p
+				margin: 0
+			p.text-item
+				margin-top: 18px
+				max-width: 308px
+			p.price
+				font-family: 'ProximaNova-Bold'
+				margin-top: 8px
+				span
+					color: #999999
+					text-decoration: line-through
+					font-size: 14px
+					font-family: 'ProximaNova-Regular'
+					padding-left: 15px
+	.reviews
+		.review_last
+			border-top: 1px solid #ececec
+			//border-bottom: 1px solid #ececec
+			display: block
+			width: 100%
+			padding: 10px 0 30px 0
+			.author, .review_text
+				display: inline-block
+				vertical-align: top
+			.author
+				width: 35%
+				text-align: center
+				.image
+					width: 128px
+					height: 128px
+					background-position: center
+					background-size: cover
+					background-repeat: no-repeat
+					display: block
+					margin: 30px auto 0 auto
+				h3
+					font-size: 18px
+					color: #222
+					font-weight: normal
+				.question
+					font-size: 14px
+					color: #222
+					padding: 10px
+					border-radius: 5px
+					outline: none
+					cursor: pointer
+					border: 1px solid #dfdfdf
+					background: none
+			.review_text
+				width: 64%
+				h4
+					font-size: 24px
+					font-family: 'ProximaNova-Bold'
+					margin: 30px 0
+				p
+					font-size: 18px
+					margin-bottom: 28px
+					margin-top: 0
+					color: #000
+					line-height: 1.5
+				.all-rews
+					padding-bottom: 10px
+					.reload
+						margin: 0
+						.button
+							margin: 0
+					h4, .sort-panel
+						display: inline-block
+						vertical-align: middle
+					.stars
+						padding-left: 10px
+						display: inline-block
+						vertical-align: middle
+						position: relative
+						.hidden
+							position: absolute
+						.star
+							width: 17px
+							height: 16px
+							background-position: center
+							background-repeat: no-repeat
+							background-size: cover
+							vertical-align: top
+							display: inline-block
+						.star.full
+							background-image: url(../img/star.png)
+						.star.half
+							background-image: url(../img/star-half.png)
+
+					.sort-panel
+						margin: 30px 0
+						float: right
+						span
+							margin: 0 5px
+						span.sort
+							padding: 5px 10px
+							border-radius: 50px
+							cursor: pointer
+						span.sort.active
+							background-color: #fff
+					article.old-review
+						margin-bottom: 40px
+						p
+							margin: 10px 0
+						.person
+							color: #999999
+							font-size: 14px
+
+					i
+						font-style: normal
+				.share
+					span
+						font-size: 14px
+						color: #aaaaaa
+					ul
+						margin: 0 0 0 20px 
+						padding: 0
+						display: inline-block
+						li
+							display: inline-block
+							vertical-align: middle
+							a
+								color: #aaaaaa
+								background-color: #ececec
+								display: block
+								font-size: 12px
+								height: 12px
+								//min-width: 27px
+								padding: 5px 15px
+								background-position: center
+								background-repeat: no-repeat
+								margin: 0 5px
+								border-radius: 50px
+							a.fb
+								background-image: url(../img/socials/fb.png)
+							a.twitter
+								background-image: url(../img/socials/twitter.png)
+							a.vk
+								background-image: url(../img/socials/vk.png)
+							a.ppp
+								background-image: url(../img/socials/hz.png)
+							a.havehtml
+								padding-left: 30px
+								background-position: 7px
+								padding-right: 10px
+
+.footer
+	background-color: #fff
+	p
+		margin: 0
+	.footer-top
+		padding: 40px 0
+		display: block
+		.leftt, .rightt
+			display: inline-block
+			vertical-align: top
+			width: 49%
+		.leftt
+			.image
+				width: 49px
+				height: 48px
+				display: block
+				background-image: url(../img/icon.png)
+				background-position: center
+				background-repeat: no-repeat
+				background-size: cover
+				display: inline-block
+				vertical-align: top
+				margin-top: 5px
+			.text
+				display: inline-block
+				vertical-align: top
+				max-width: 400px
+				padding-left: 35px
+		.rightt
+			.flex
+				display: flex
+				justify-content: space-between
+				align-items: flex-start
+				.item
+					display: inline-block
+					vertical-align: top
+
+				.item.links li
+					list-style: none
+					line-height: 1.7
+					a
+						transition: 0.3s
+						border-bottom: 1px solid #f1f1f1
+
+					a:hover
+						color: #ef9085
+						transition: 0.3s
+	.footer-bot
+		padding: 40px 0
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+		.row1
+			p
+				color: #999999
+				font-size: 14px
+				margin-top: 10px
+				text-align: center
+		.row1 .create_shop
+			padding: 8px 17px
+			display: block
+			font-size: 16px
+			background-color: #222222
+			border: 1px solid #222
+			border-radius: 50px
+			color: #fff
+			transition: 0.3s
+			&:hover
+				color: #222
+				background: none
+				border: 1px solid #f0f0f0
+		.row2
+			position: relative
+			padding-left: 33px
+			&::before
+				content: ""
+				width: 22px
+				height: 22px
+				background-position: center
+				background-image: url(../img/svg/Speach-Bubbles.svg)
+				background-size: cover
+				position: absolute
+				left: 0
+				top: 0
+			a
+				color: #222222
+			p
+				max-width: 170px
+				padding-top: 10px
+				color: #999999
+				font-size: 14px
+		.row3
+			max-width: 600px
+			width: 100%
+			p
+				font-size: 14px
+				color: #222
+				padding-bottom: 5px
+			form
+				input
+					max-width: 400px
+					width: 100%
+					padding-left: 20px
+					height: 50px
+					font-size: 16px
+					color: #808080
+					border: 1px solid #f0f0f0
+					border-radius: 5px
+					outline: none;
+				button
+					max-width: 144px
+					outline: none;
+					width: 100%
+					border: 1px solid #999999
+					font-size: 17px
+					color: #222222
+					background: none
+					height: 54px
+					border-radius: 5px
+					cursor: pointer
+					transition: 0.3s
+					margin-left: 10px
+					&:hover
+						background-color: #222
+						color: #fff
+						transition: 0.3s
+	.copyright
+		border-top: 1px solid #f1f1f1
+		padding: 22px 0
+		display: flex
+		justify-content: space-between
+		align-items: center
+		p
+			color: #909090
+			font-size: 14px
+		.socials
+			margin: 0
+			padding: 0
+			li
+				list-style: none
+				display: inline-block
+				vertical-align: top
+				font-size: 14px
+				a
+					background-position: center
+					background-repeat: no-repeat
+					width: 25px
+					height: 25px
+					display: block
+					margin: 0 15px
+				a.pin
+					background-image: url(../img/socials/pin1.png)
+				a.instagram
+					background-image: url(../img/socials/inst1.png)
+				a.twitter
+					background-image: url(../img/socials/tw1.png)
+				a.fb
+					background-image: url(../img/socials/fb1.png)
+				a.vk
+					background-image: url(../img/socials/vk1.png)
+
+
+.reload
+	display: block
+	margin: 40px 0
+	width: 100%
+	.button
+		color: #222222
+		border: 1px solid #dfdfdf
+		border-radius: 50px
+		background: none
+		padding: 14px 20px 14px 50px
+		font-size: 15px
+		position: relative
+		outline: none
+		cursor: pointer
+		display: block
+		margin: 0 auto
+				
+		&::before
+			content: ""
+			position: absolute
+			width: 18px
+			height: 18px
+			top: 13.6px
+			left: 17px
+			background-image: url(../img/svg/Syncronize.svg)
+			background-repeat: no-repeat
+			background-position: center
+		&:hover
+			color: #333
+		&:hover::before
+			content: ""
+			animation: loading  2s infinite ease;
+			@keyframes loading
+  				0%
+    				transform: rotate(0deg)
+  				100%
+   					transform: rotate(360deg)	
+
+
+
+			
+			
