@@ -42,9 +42,14 @@
 						</g>
 						</svg>
 					</div>
-					
-				    	<a class="find-me btn btn-info btn-block share button">Поделиться местоположением</a>
-		   
+					<form method="GET" action="ss.php">
+						<input type="hidden" id="lat" name="lat">
+						<input type="hidden" id="lng" name="lng">
+						<a class="find-me btn btn-info btn-block share button">Поделиться местоположением</a>
+					</form>
+				    <div class="link">
+				    	
+				    </div>
 				</div>
 			</div>
 			
@@ -72,6 +77,10 @@
 	    	var findMeButton = $('.find-me');
 
 			// Check if the browser has support for the Geolocation API
+
+			//var path = location.pathname.split('/');
+			//var path = path[path.length-1];
+			
 			if (!navigator.geolocation) {
 
 			  findMeButton.addClass("disabled");
@@ -92,6 +101,10 @@
 			      $('.latitude').text(lat.toFixed(3));
 			      $('.longitude').text(lng.toFixed(3));
 			      $('.coordinates').addClass('visible');
+			      $('#lat').val(lat);
+			      $('#lng').val(lng)
+			      $('.link').append('<a href="https://maptracker.fedorrychkov.com/?lat='+ lat +';?lng='+ lng +'">https://maptracker.fedorrychkov.com/?lat='+ lat +';?lng='+ lng +'</a>');
+
 
 			      // Create a new map and place a marker at the device location.
 			      /*var map = new google.maps.Map(document.getElementById('map'), {
