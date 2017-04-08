@@ -1,0 +1,111 @@
+body
+	background-color: #2475cb 
+	font-size: 18px
+	color: #fff
+	font-family: 'Open Sans Condensed'
+/*#337ac5*/
+
+/*** standart styles ***/
+a
+	color: #fff
+	text-decoration: none
+.page-wrapper
+	max-width: 1250px
+	width: 100%
+	margin: 0 auto
+.inner
+	padding: 15px 50px
+.share
+	color: #fff
+	font-size: 25px
+	border: 2px solid #fff
+	padding: 10px 20px
+	border-radius: 5px
+	max-width: 300px
+	display: block
+	margin: 0 auto
+	transition: 0.3s
+	font-weight: 600
+	cursor: pointer
+	background-color: #2475cb
+	&:hover
+		background-color: #fff
+		color: #333
+		transition: 0.3s
+
+/**** index ****/
+// Header
+.header
+	.inner
+		display: flex
+		justify-content: space-between
+		align-items: center
+		.h1
+			font-size: 40px
+			cursor: default
+			font-weight: 600
+		a
+			border-radius: 50%
+			height: 32px
+			width: 32px
+			transition: 0.3s
+			position: relative
+			path
+				fill: #fff
+				transition: 0.3s
+			&:hover
+				background-color: #fff
+				transition: 0.3s
+			&:hover path
+				fill: #000
+				transition: 0.3s
+			.github-context
+				position: absolute
+				font-size: 12px
+				width: 100px
+				bottom: -25px
+				background-color: #000
+				padding: 2px 2px 2px 4px
+				border-radius: 3px
+				left: 0
+				margin-left: -35px
+				display: none
+				transition: 0.3s
+				p
+					margin: 0
+			&:hover .github-context
+				display: block
+				transition: 0.3s
+.main-part
+	.inner
+		.text
+			max-width: 1000px
+			text-align: center
+			margin: 100px auto 0 auto
+			h1
+				font-weight: normal
+				font-size: 60px
+			.mapicon
+				width: 80px
+				height: 80px
+				background-size: cover
+				background-position: center
+				margin: 60px auto
+				display: block
+			.button 
+				margin-top: 70px
+	#map
+	  max-width: 100%
+	  height: auto
+	  margin: 0 auto
+	  position: relative
+	/*#map::before
+		content: ""
+		position: absolute
+		width: 20px
+		height: 20px
+		top: 50%
+		left: 50%
+		margin-top: -10px
+		margin-left: -10px
+		background-color: #000*/

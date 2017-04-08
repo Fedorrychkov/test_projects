@@ -1,0 +1,96 @@
+body {
+  background-color: #2475cb;
+  font-size: 18px;
+  color: #fff;
+  font-family: "Open Sans Condensed"; }
+
+/*#337ac5 */
+/*** standart styles ** */
+a {
+  color: #fff;
+  text-decoration: none; }
+
+.page-wrapper {
+  max-width: 1250px;
+  width: 100%;
+  margin: 0 auto; }
+
+.inner {
+  padding: 15px 50px; }
+
+.share {
+  color: #fff;
+  font-size: 25px;
+  border: 2px solid #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  max-width: 300px;
+  display: block;
+  margin: 0 auto;
+  transition: 0.3s;
+  font-weight: 600; }
+  .share:hover {
+    background-color: #fff;
+    color: #333;
+    transition: 0.3s; }
+
+/**** index *** */
+.header .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .header .inner .h1 {
+    font-size: 40px;
+    cursor: default;
+    font-weight: 600; }
+  .header .inner a {
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    transition: 0.3s;
+    position: relative; }
+    .header .inner a path {
+      fill: #fff;
+      transition: 0.3s; }
+    .header .inner a:hover {
+      background-color: #fff;
+      transition: 0.3s; }
+    .header .inner a:hover path {
+      fill: #000;
+      transition: 0.3s; }
+    .header .inner a .github-context {
+      position: absolute;
+      font-size: 12px;
+      width: 100px;
+      bottom: -25px;
+      background-color: #000;
+      padding: 2px 2px 2px 4px;
+      border-radius: 3px;
+      left: 0;
+      margin-left: -35px;
+      display: none;
+      transition: 0.3s; }
+      .header .inner a .github-context p {
+        margin: 0; }
+    .header .inner a:hover .github-context {
+      display: block;
+      transition: 0.3s; }
+
+.main-part .inner .text {
+  max-width: 1000px;
+  text-align: center;
+  margin: 100px auto 0 auto; }
+  .main-part .inner .text h1 {
+    font-weight: normal;
+    font-size: 60px; }
+  .main-part .inner .text .mapicon {
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    background-position: center;
+    margin: 60px auto;
+    display: block; }
+  .main-part .inner .text .button {
+    margin-top: 70px; }
+
+/*# sourceMappingURL=main.css.map */
