@@ -28,7 +28,9 @@ a {
   display: block;
   margin: 0 auto;
   transition: 0.3s;
-  font-weight: 600; }
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #2475cb; }
   .share:hover {
     background-color: #fff;
     color: #333;
@@ -92,5 +94,28 @@ a {
     display: block; }
   .main-part .inner .text .button {
     margin-top: 70px; }
+.main-part #map {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  position: relative; }
+
+.detection {
+  /*#map::before
+   * content: ""
+   * position: absolute
+   * width: 20px
+   * height: 20px
+   * top: 50%
+   * left: 50%
+   * margin-top: -10px
+   * margin-left: -10px
+   * background-color: #000 */ }
+  .detection .inner .text {
+    margin-top: 50px; }
+    .detection .inner .text h1 {
+      font-size: 40px; }
+  .detection .generate {
+    margin-top: 20px; }
 
 /*# sourceMappingURL=main.css.map */
